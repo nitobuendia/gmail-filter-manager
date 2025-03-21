@@ -1,0 +1,47 @@
+<!--
+  @fileoverview One pager to play around with Gmail allowed colours.
+  The objective of this utility is to visualize all supported Label colours and
+  easily generate good combinations. This is not required for the application
+  but it is a good utility that goes well with it.
+-->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Gmail Label Color Preview</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+
+  <body>
+    <div id="preview">
+      <h1>Preview</h1>
+      <div id="label">Test Label</div>
+    </div>
+
+    <div id="picker">
+
+      <div id="background" class="panel">
+        <h1>Background</h1>
+        <div class="colors"></div>
+        <label class="manual">
+          Color:
+          <input type="text" name="background" maxlength="7" value="#ffffff" />
+          <button>🔄</button>
+        </label>
+      </div>
+
+      <div id="text" class="panel">
+        <h1>Text</h1>
+        <div class="colors"></div>
+        <label class="manual">
+          Color:
+          <input type="text" name="text" maxlength="7" value="#000000" />
+          <button>🔄</button>
+        </label>
+      </div>
+    </div>
+
+  </body>
+
+</html>

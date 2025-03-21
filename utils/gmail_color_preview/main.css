@@ -1,0 +1,47 @@
+body {
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+body>div {
+  margin-bottom: 2em;
+}
+
+#label {
+  display: inline-block;
+  padding: 5px;
+}
+
+.panel {
+  display: inline-block;
+  margin-right: 20px;
+  width: 260px;
+}
+
+.colors>div {
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  margin: 1px;
+  width: 20px;
+}
+
+.manual {
+  display: block;
+  margin-top: 1em;
+}
+
+.manual>input {
+  display: inline-block;
+  padding: 0.5em;
+  vertical-align: middle;
+  width: 7em;
+}
+
+.manual>button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5em;
+  vertical-align: middle;
+}

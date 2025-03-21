@@ -31,9 +31,9 @@ module.exports = {
     modules: [
       path.resolve(__dirname, 'src'),
       'node_modules',
-    ]
-  },
-  node: {
-    fs: 'empty',
-  },
+    ],
+    fallback: {
+      fs: false
+    }
+  }
 };

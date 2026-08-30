@@ -19,5 +19,7 @@ module.exports = {
   webpack: {
     module: common.module,
     node: common.node,
+    resolve: common.resolve,
+    externals: common.externals,
   },
 };

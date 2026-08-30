@@ -3,6 +3,7 @@
 import * as filterCompare from '../service/filter_compare'
 import * as filterManager from '../service/filter_manager'
 import * as labelManager from '../service/label_manager'
+import { GmailLabel } from '../label/gmail_label'
 
 /** @const {string} Name of the .html file that contains filters. */
 const FILTER_FILENAME = 'filters';

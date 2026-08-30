@@ -68,8 +68,8 @@ class GmailFilter {
     if (!this.action || !otherFilter.action) return false;
 
     for (const actionKey of ACTION_KEYS) {
-      const thisValue = this.action[actionKey];
-      const otherValue = otherFilter.action[actionKey];
+      let thisValue = this.action[actionKey];
+      let otherValue = otherFilter.action[actionKey];
 
       const isThisArray = Array.isArray(thisValue);
       const isOtherArray = Array.isArray(otherValue);

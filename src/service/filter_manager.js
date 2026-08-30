@@ -82,7 +82,8 @@ const deleteFilters = (filtersToDelete, dryRun = false) => {
 const deleteFilter = (filterToDelete) => {
   const filterId = filterToDelete.id;
   if (!filterId) {
-    const filterName = Filter.getManagedFilterName(filter.criteria.query);
+    const filterName =
+      Filter.getManagedFilterName(filterToDelete.criteria.query);
     throw new Error(`Filter id for filter ${filterName} not detected.`);
   }
   Gmail.Users.Settings.Filters.remove('me', filterId);
